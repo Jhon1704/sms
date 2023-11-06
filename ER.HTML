@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUPOS PORTATILES RECOMENDABLES</title>
+
+    <style>
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 88%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #ffffff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #ffffff;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #000000;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border: 0px solid #000;
+  margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p><img src="p1.png" alt="Front Side 1" style="width:100%; height:100%; object-fit:contain;"></p>
+              </div>
+              <div class="card-back">
+                <p>
+                    <strong style="color: green;">Pros</strong><br>
+                    <span style="font-size: 10px;">Procesador muy moderno y capaz</span><br>
+                    <span style="font-size: 10px;">SSD de buen tamaño</span><br>
+                    <span style="font-size: 10px;">Con puerto USB-C</span><br><br>
+                
+                    <strong style="color: red;">Contras</strong><br>
+                    <span style="font-size: 10px;">Sin sistema operativo</span><br>
+                    <span style="font-size: 10px;">Escasez de puertos USB</span>
+                </p>
+                
+                
+              </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p><img src="p2.png" alt="Front Side 2" style="width:100%; height:100%; object-fit:contain;"></p>
+              </div>
+              <div class="card-back">
+                <p>Back Side 2</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p><img src="p3.png" alt="Front Side 3" style="width:100%; height:100%; object-fit:contain;"></p>
+              </div>
+              <div class="card-back">
+                <p>Back Side 3</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p><img src="p4.png" alt="Front Side 4" style="width:100%; height:100%; object-fit:contain;"></p>
+              </div>
+              <div class="card-back">
+                <p>Back Side 4</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p><img src="p5.png" alt="Front Side 5" style="width:100%; height:100%; object-fit:contain;"></p>
+              </div>
+              <div class="card-back">
+                <p>Back Side 5</p>
+              </div>
+            </div>
+          </div>
+          
+           
+  
+</body>
+</html>

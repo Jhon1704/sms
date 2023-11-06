@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>inicio</title>
+    <style>
+        /* Estilos para el menú y los botones */
+        body {
+            background-color: #000000;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .menu {
+            background: linear-gradient(to bottom, #ffb300, #5b5b5b);
+            padding: 10px;
+            width: 200px;
+            height: 150vh;
+            color: #ffffff;
+            position: fixed;
+        }
+        button {
+  padding: 20px 60px;
+  background-color: #000000;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  /* overflow: hidden; */
+  transition: 500ms;
+}
+
+button span {
+  color: gray;
+  position: relative;
+  transition: 500ms;
+  transition-delay: 500ms;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  transition: 500ms;
+  transition-delay: 500ms;
+  background-color: goldenrod;
+  box-shadow: 0 0 10px goldenrod,
+   0 0 30px goldenrod, 
+   0 0 50px goldenrod;
+}
+
+button div {
+  transition: 500ms;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 50px rgb(255, 255, 255);
+}
+
+button .top {
+  width: 15px;
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+
+button .bottom {
+  width: 15px;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+}
+
+button .left {
+  width: 2px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+button .right {
+  width: 2px;
+  height: 15px;
+  bottom: 0;
+  right: 0;
+}
+
+button:hover {
+  color: #000;
+}
+
+button:hover span {
+  color: #000;
+}
+
+button:hover:before {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button:hover .top, 
+button:hover .bottom {
+  width: 100%;
+}
+
+button:hover .left,
+button:hover .right {
+  height: 100%;
+}
+
+        .menu p {
+            margin-top: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            margin-left: 200px; 
+        }
+
+        .content h1 {
+            margin-top: 0;
+            color: #e0a015; 
+        }
+
+        .content img {
+            max-width: 70%; 
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .system-table {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .system-table th,
+        .system-table td {
+            padding: 20px;
+            text-align: left;
+            border: 6px solid #b6801b;
+        }
+
+        .system-table th {
+            background-color: #000000;
+        }
+        
+
+        .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons a {
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+}
+
+
+    </style>
+ 
+</head>
+
+<body>
+
+    <div class="menu">
+
+      <button style="font-size: 12px; padding: 5px;">
+        <a href="I.HTML" style="text-decoration: none;">
+            <span style="font-size: 12px;">INSTALACION DE SISTEMAS OPERATIVOS.</span>
+            <div class="top" style="height: 5px; width: 5px;"></div>
+            <div class="left" style="height: 5px; width: 5px;"></div>
+            <div class="bottom" style="height: 5px; width: 5px;"></div>
+            <div class="right" style="height: 5px; width: 5px;"></div>
+        </a>
+    </button>
+        <br> <br> <br>  
+        <button style="font-size: 12px; padding: 5px;">
+          <a href="IP.HTML" style="text-decoration: none;">
+              <span style="font-size: 12px;">INSTALACION DE PROGRAMAS.</span>
+              <div class="top" style="height: 5px; width: 5px;"></div>
+              <div class="left" style="height: 5px; width: 5px;"></div>
+              <div class="bottom" style="height: 5px; width: 5px;"></div>
+              <div class="right" style="height: 5px; width: 5px;"></div>
+          </a>
+        </button>
+      
+      
+      <br> <br> <br>  
+      <button style="font-size: 12px; padding: 5px;">
+        <a href="J.HTML" style="text-decoration: none;">
+            <span style="font-size: 12px;">INSTALACION DE JUEGOS.</span>
+            <div class="top" style="height: 5px; width: 5px;"></div>
+            <div class="left" style="height: 5px; width: 5px;"></div>
+            <div class="bottom" style="height: 5px; width: 5px;"></div>
+            <div class="right" style="height: 5px; width: 5px;"></div>
+        </a>
+      </button>
+       
+        <br> <br> <br> 
+        <button style="font-size: 12px; padding: 5px;">
+          <a href="PDC.html" style="text-decoration: none;">
+              <span style="font-size: 12px;">PARTES DE PC RECOMENDABLES.</span>
+              <div class="top" style="height: 5px; width: 5px;"></div>
+              <div class="left" style="height: 5px; width: 5px;"></div>
+              <div class="bottom" style="height: 5px; width: 5px;"></div>
+              <div class="right" style="height: 5px; width: 5px;"></div>
+          </a>
+        </button>
+      
+        <br> <br> <br> 
+        <button style="font-size: 12px; padding: 5px;">
+          <a href="https://www.pccomponentes.com/mejores-marcas-de-portatiles" style="text-decoration: none;">
+              <span style="font-size: 12px;">EQUIPOS PORTATILES RECOMENDABLES.</span>
+              <div class="top" style="height: 5px; width: 5px;"></div>
+              <div class="left" style="height: 5px; width: 5px;"></div>
+              <div class="bottom" style="height: 5px; width: 5px;"></div>
+              <div class="right" style="height: 5px; width: 5px;"></div>
+          </a>
+        </button>
+      
+        <br> <br> <br> <br><br><br><br>
+        <button style="font-size: 12px; padding: 5px;">
+          <a href="h.html" style="text-decoration: none;">
+              <span style="font-size: 12px;">HABLA CON NOSOTROS.</span>
+              <div class="top" style="height: 5px; width: 5px;"></div>
+              <div class="left" style="height: 5px; width: 5px;"></div>
+              <div class="bottom" style="height: 5px; width: 5px;"></div>
+              <div class="right" style="height: 5px; width: 5px;"></div>
+          </a>
+        </button>
+      
+    </div>
+
+    <div class="content" id="dynamic-content">
+        <h1>JHON HELPS YOU AND RECOMMENDS THINGS TO YOU</h1>
+    
+        <img src="1.gif" alt="GIF" style="width: 50%; height: 40%;">
+
+        <table class="system-table" >
+            <h2 style="text-align: center; color: #ff9100;">Mejores Sistemas Operativos</h2>
+            <tr>
+                <th><img src="1.gif"</th>
+                <th><img src="w.png"</th>
+                <th><img src="m.png" </th>
+                <th><img src="l.png" </th>
+            </tr>
+            <tr>
+                
+                <td style="color: #ff9100;">Características</td>
+                <td style="color: #ff9100;">Windows, desarrollado por Microsoft, es un sistema operativo líder conocido por su interfaz amigable y personalizable. Ofrece amplia compatibilidad con hardware y software de terceros, priorizando la facilidad de uso y la accesibilidad. Sus versiones, como Windows 10 Home, Pro y Server, atienden las necesidades de usuarios individuales y empresas, y su popularidad se extiende a aplicaciones y juegos. </td>
+                <td style="color: #ff9100;">macOS, desarrollado por Apple Inc., es un sistema operativo exclusivo para dispositivos Mac. Destaca por su diseño elegante, integración perfecta con otros dispositivos Apple y herramientas integradas para edición de fotos y videos. Con énfasis en la creatividad y la usabilidad, es preferido en entornos de desarrollo y creativos, proporcionando estabilidad y seguridad. </td>
+                <td style="color: #ff9100;">Linux, un sistema operativo de código abierto, se destaca por su flexibilidad y seguridad, siendo popular en servidores y PC. Reconocido por su estabilidad, robustez y entorno de línea de comandos poderoso, atrae a programadores y entusiastas de la libertad y la adaptabilidad gracias a su amplia personalización y disponibilidad de software de código abierto. </td>
+            </tr>
+        </table>
+        
+        <div class="social-buttons">
+          <a href="https://wa.me/3216711294" target="_blank">
+              <img src="wpp.png" alt="WhatsApp" width="80" height="80">
+          </a>
+         
+          <a href="https://www.facebook.com/profile.php?id=100055544190296&mibextid=ZbWKwL"
+            target="_blank">
+              <img src="f.png" alt="Facebook" width="50" height="50">
+          </a>
+          <a href="https://instagram.com/jhon.palacios17?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank">
+              <img src="i.png" alt="Instagram" width="50" height="50">
+          </a>
+          <a href="https://twitter.com/JhonPalaciio" target="_blank">
+              <img src="x.png" alt="Twitter" width="50" height="50">
+          </a>
+      </div>
+      
+</div>
+
+
+
+
+</body>
+
+</html>
